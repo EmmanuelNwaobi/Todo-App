@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.main-container{
+    width: 40%;
+    height: auto;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* background-color: aqua; */
+}
+
+.heading-and-input-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.7rem;
+    background: linear-gradient(135deg, #07B9F9, #057EEF);
+    padding: 2rem 1rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+.heading-and-image-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.6rem;
+    padding: 1.2rem;
+}
+
+.heading-container{
+    width: fit-content;
+    height: auto;
+}
+
+.heading-container h1{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.image-container{
+    width: 30px;
+    height: 25px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.form-input-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.input-group input{
+    width: 100%;
+    height: auto;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border: 1px solid #057EEF;
+}
+
+.input-alert{
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-style: italic;
+    color: red;
+    margin-top: 0.2rem;
+    position: absolute;
+    top: 1;
+    left: 0;
+}
+
+.button-container{
+    width: fit-content;
+    height: auto;
+}
+.button-container button{
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+    background-color: #057EEF;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #0456c7;
+}
+
+.task-icons i:hover {
+    color: #057EEF;
+}
+
+.list-of-task-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.6rem;
+    padding: 1rem;
+}
+
+.list-title-text{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.list-title-text h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list-task-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.list-task-container:hover {
+    background-color: #f1f1f1;
+}
+
+.list-task-text{
+    width: fit-content;
+    height: auto;
+}
+
+.list-task-text p{
+    font-size: 1rem;
+    color: #232323;
+}
+
+.task-icons{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 0.7rem;
+}
+
+.task-icons i{
+    cursor: pointer;
+    color: #595858;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: grey;
+}
+
+
+
+@media screen and (max-width: 840px){
+    .main-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main-container{
+        width: 90%;
+    }
+    form{
+        width: 90%;
+    }
+}

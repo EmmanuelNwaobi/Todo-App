@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ea205f5b6e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="heading-and-input-container">
+            <div class="heading-and-image-container">
+                <div class="heading-container">
+                    <h1>TODO LIST</h1>
+                </div>
+                <div class="image-container">
+                    <img src="./img/5515161-removebg-preview.png" alt="Notepad image">
+                </div>
+            </div>
+            <div class="form-input-container">
+                <form id="form">
+                    <div class="input-group">
+                        <input type="text" id="todo-list" name="todo-list" placeholder="Write your todo list here....">
+                        <p id="input-alert" class="input-alert"></p>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" id="add-button">ADD</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="list-title-text">
+            <h3>LIST OF WORK TODO:</h3>
+        </div>
+        <div class="list-of-task-container" id="list-of-task-container">
+            <!-- <div class="list-task-container">
+                <div class="list-task-text">
+                    <p>Shopping</p>
+                </div>
+                <div class="task-icons">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
